@@ -6,4 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+    <script>
+        document.body.classList.add("enhanced");
+    </script>
