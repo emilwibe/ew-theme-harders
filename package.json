@@ -18,6 +18,10 @@
   "homepage": "https://github.com/emilwibe/ew-theme-harders#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp4": "^4.0.2"
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp4": "^4.0.3"
   }
 }
