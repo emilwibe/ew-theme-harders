@@ -20,8 +20,10 @@
             'not_found' =>  'Ingen events fundet',
             'not_found_in_trash'  =>  'Ingen events fundet i papirkurven',
         ),
+        'show_in_rest' => true,
         'public'  =>  true,
         'show_in_admin_bar' =>  true,
+        'supports' => array('editor'),
         'menu_position' =>  2,
         'menu_icon' =>  'dashicons-format-audio',
     ));
