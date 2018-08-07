@@ -24,7 +24,13 @@
         'show_in_rest' => true,
         'public'  =>  true,
         'show_in_admin_bar' =>  true,
-        'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail',
+            'revisions',
+            'page-attributes'
+        ),
         'menu_position' =>  2,
         'menu_icon' =>  'dashicons-format-audio',
     ));
