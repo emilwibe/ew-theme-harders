@@ -1,5 +1,6 @@
 <?php
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
 
     add_action('init', function(){
         register_nav_menu('primary', 'Primary');
