@@ -10,3 +10,5 @@ gulp.task("css", function(){
         .pipe(cleanCSS())
         .pipe(gulp.dest("./dist"))
 });
+
+gulp.task("default", ["css"]);
