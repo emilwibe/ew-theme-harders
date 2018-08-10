@@ -37,8 +37,8 @@
         $eventCounter = 0;
     ?>
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
+    <div class="featured image" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, 'full'); ?>');"></div><!--/.featured.image-->
     <?php
-        the_post_thumbnail( 'full' );
         $eventCounter += 1;
     ?>
     <?php endwhile; ?>
