@@ -1,1 +1,1 @@
-!function(){var e=document.getElementById("featured-placeholder"),t=document.getElementById("featured-container");e&&t&&e.addEventListener("load",function(n){t.style.backgroundImage="url('"+e.getAttribute("src")+"')"},!1)}();
+!function(){var e,t=document.getElementById("featured-placeholder"),n=document.getElementById("featured-container");t&&n&&t.addEventListener("load",function(d){e=t.getAttribute("src"),n.style.backgroundImage="url("+e+")"},!1)}();
