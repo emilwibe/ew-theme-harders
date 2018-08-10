@@ -1,7 +1,9 @@
 const   gulp = require("gulp"),
         sass = require("gulp-sass"),
         concatCSS = require("gulp-concat-css"),
-        cleanCSS = require("gulp-clean-css")
+        cleanCSS = require("gulp-clean-css"),
+        concat = require("gulp-concat"),
+        minify = require("gulp-minify")
 ;
 
 gulp.task("css", function(){
@@ -11,4 +13,11 @@ gulp.task("css", function(){
         .pipe(gulp.dest("./dist"))
 });
 
-gulp.task("default", ["css"]);
+gulp.task("js-footer", function(){
+    return gulp.src("./src/js/footer/**/*.js")
+        .pipe(concat("core-footer.js"))
+        .pipe(minify())
+        .pipe(gulp.dest("./dist"))
+});
+
+gulp.task("default", ["css", "js-footer"]);

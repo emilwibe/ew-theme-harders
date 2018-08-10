@@ -7,6 +7,7 @@
     });
     add_action('wp_enqueue_scripts', function(){
         wp_enqueue_style('core-styles', get_template_directory_uri() . '/dist/core-styles.css', '', '');
+        wp_enqueue_script('core-scripts-footer', get_template_directory_uri() . '/dist/core-footer-min.js', '', '', true);
     });
 
     //CUSTOM POST TYPE

@@ -1,1 +1,1 @@
-body,html{margin:0;padding:0}@media screen and (min-width:1024px){.home .featured.image{width:100vw;height:100vh;position:fixed;top:0;left:0;background-repeat:no-repeat;background-size:cover;background-position:center}}
+body,html{margin:0;padding:0}.featured.placeholder{display:none}.featured.image.container{width:100vw;height:100vh;position:fixed;top:0;left:0;background-repeat:no-repeat;background-size:cover;background-position:center}
