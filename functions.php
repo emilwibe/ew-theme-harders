@@ -5,6 +5,9 @@
     add_action('init', function(){
         register_nav_menu('primary', 'Primary');
     });
+    add_action('wp_enwueue_scripts', function(){
+        wp_enqueue_style('core-styles', get_template_directory_uri() . '/dist/core-styles.css', '', '');
+    });
 
     //CUSTOM POST TYPE
     register_post_type('event', array(
