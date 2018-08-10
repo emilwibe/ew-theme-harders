@@ -1,0 +1,7 @@
+.wrapper{
+    margin:0 auto;
+    width:96%;
+}
+.wrapper.sm{
+    max-width:768px;
+}
