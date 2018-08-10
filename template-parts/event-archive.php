@@ -34,14 +34,19 @@
   ?>
   <?php if($the_query->have_posts()) : ?>
     <?php
-        $eventCounter = 0;
+        $firstComingEvent = true;
     ?>
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
-    <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>" alt="" class="featured placeholder" id="featured-placeholder">
-    <div class="featured image container" id="featured-container"></div><!--/.featured.image-->
-    <?php
-        $eventCounter += 1;
-    ?>
+    <?php if($firstComingEvent) : ?>
+
+        <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>" alt="" class="featured placeholder" id="featured-placeholder">
+        <div class="featured image container" id="featured-container"></div><!--/.featured.image-->
+
+        <h2 class="event title" id="event-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
+
+    <?php $firstComingEvent = false; ?>
+    <?php else : ?>
+    <?php endif; ?>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
   <?php endif; ?>
