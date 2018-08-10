@@ -8,6 +8,7 @@
     function featuredImageLoad(){
         featuredPlaceholderSrc = featuredPlaceholder.getAttribute("src");
         featuredContainer.style.backgroundImage = 'url(' + featuredPlaceholderSrc + ')';
+        featuredContainer.style.animationName = "fade-in";
     }
 
     if(featuredPlaceholder && featuredContainer){
