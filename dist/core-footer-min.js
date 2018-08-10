@@ -1,1 +1,1 @@
-console.log("hello");
+!function(){var e=document.getElementById("featured-placeholder"),t=document.getElementById("featured-container");e&&t&&e.addEventListener("load",function(n){t.style.backgroundImage="url('"+e.getAttribute("src")+"')"},!1)}();
