@@ -17,7 +17,6 @@
 }
 .featured.event.title{
     font-family: 'Archivo Black', sans-serif;
-    font-size:80px;line-height:1.54;
     animation-duration:1s;
     opacity:0;
     animation-fill-mode:forwards;
