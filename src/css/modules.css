@@ -55,6 +55,7 @@
 .featured.event.link{
     font-family:'Ubuntu', sans-serif;
     color:#333;
+    display:block;
     opacity:0;
     animation-fill-mode:forwards;
     animation-duration:0.8s;
