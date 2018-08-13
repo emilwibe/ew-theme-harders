@@ -138,10 +138,13 @@ body.home {
 
 .featured.event.slide {
   width: 20%;
+  padding: 10px;
+  text-decoration: none;
 }
 
 .featured.event.slide * {
   color: #fff;
+  text-transform: uppercase;
 }
 
 .featured.event.slide:hover * {
