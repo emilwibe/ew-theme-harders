@@ -33,7 +33,7 @@
             var newEl = document.createElement("a");
             newEl.classList.add("featured", "event", "slide");
             newEl.setAttribute("href", featuredEventArray[i]["eventTitle"]);
-            newEl.innerHTML = featuredEventArray[i]["eventTitle"];
+            newEl.appendChild(document.createElement("h2").innerHTML = featuredEventArray[i]["eventTitle"]);
             featuredSlider.appendChild(newEl);
         }
     }
