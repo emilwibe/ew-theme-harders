@@ -18,6 +18,7 @@
         featuredContainer.style.backgroundImage = 'url(' + featuredPlaceholderSrc + ')';
         featuredContainer.style.animationName = "fade-in";
         featuredWrapper.style.animationName = "fade-in";
+        featuredWrapper.style.animationDelay = "0";
         featuredTitle.style.animationName = "fade-in";
         featuredDate.style.animationName = "fade-in";
         featuredLink.style.animationName = "fade-in";
@@ -38,6 +39,7 @@
             featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
             featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
             featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
+            featuredWrapper.style.animationDelay = "0.75s";
             setTimeout(function(){
                 featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
             }, 1500);
