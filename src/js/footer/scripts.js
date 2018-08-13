@@ -8,7 +8,8 @@
         featuredDate = document.getElementById("featured-date"),
         featuredLink = document.getElementById("featured-link"),
         featuredSlider = document.getElementById("featured-slider"),
-        featuredEventArrayLength = featuredEventArray.length
+        featuredEventArrayLength = featuredEventArray.length,
+        featuredEventCounter = 0
 
     ;
 
@@ -21,6 +22,27 @@
         featuredDate.style.animationName = "fade-in";
         featuredLink.style.animationName = "fade-in";
     }
+    function featuredSwitchContent(){
+        if(featuredEventArrayLength > 2){
+            if(featuredEventCounter == featuredEventArrayLength - 1){
+                featuredEventCounter = 0;
+            } else {
+                featuredEventCounter += 1;
+            }
+            featuredContainer.style.animationName = "fade-out";
+            featuredWrapper.style.animationName = "fade-out";
+            featuredTitle.style.animationName = "fade-out";
+            featuredDate.style.animationName = "fade-out";
+            featuredLink.style.animationName = "fade-out";
+            
+            featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
+            featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
+            featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
+            featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
+        }
+    }
+
+    setInterval(featuredSwitchContent, 5000);
 
     if(featuredPlaceholder && featuredContainer){
         featuredPlaceholder.addEventListener("load", function(e){
