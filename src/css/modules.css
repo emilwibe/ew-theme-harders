@@ -63,7 +63,7 @@
     animation-delay:1.6s;
 }
 .featured.event.slider{
-    width:100%;
+    min-width:100%;
     position:fixed;
     z-index:5;
     left:0;
@@ -76,7 +76,7 @@
 }
 .featured.event.slide{
     background-color:rgba(255, 255, 255, 0);
-    width:25%;
+    min-width:25%;
     padding:50px;
     text-decoration:none;
     transition:background-color 0.4s;
