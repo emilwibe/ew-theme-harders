@@ -35,12 +35,11 @@
             featuredTitle.style.animationName = "fade-out";
             featuredDate.style.animationName = "fade-out";
             featuredLink.style.animationName = "fade-out";
-            
-            featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
-            featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
-            featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
-            featuredWrapper.style.animationDelay = "0.75s";
             setTimeout(function(){
+                featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
+                featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
+                featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
+                featuredWrapper.style.animationDelay = "0.75s";
                 featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
             }, 1500);
         }
