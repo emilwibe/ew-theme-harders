@@ -15,7 +15,12 @@
     animation-duration:1s;
     animation-fill-mode:forwards;
 }
+.featured.wrapper{
+    background-color:rgba(255, 255, 255, 0.8);
+    padding:20px;
+}
 .featured.event.title{
+    color:#333;
     font-family: 'Archivo Black', sans-serif;
     font-size:80px;
     animation-duration:1s;
