@@ -42,7 +42,7 @@
         <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>" alt="" class="featured placeholder" id="featured-placeholder">
         <div class="featured image container" id="featured-container"></div><!--/.featured.image-->
 
-        <div class="featured wrapper sm2">
+        <div class="featured wrapper sm2" id="featured-wrapper">
             <h2 class="featured event title" id="event-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
 
         </div><!--/.wrapper.sm-->

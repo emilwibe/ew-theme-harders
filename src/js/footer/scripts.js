@@ -3,6 +3,7 @@
     var featuredPlaceholder = document.getElementById("featured-placeholder"),
         featuredPlaceholderSrc,
         featuredContainer = document.getElementById("featured-container"),
+        featuredWrapper = document.getElementById("featured-wrapper"),
         eventTitle = document.getElementById("event-title")
     ;
 
@@ -10,6 +11,7 @@
         featuredPlaceholderSrc = featuredPlaceholder.getAttribute("src");
         featuredContainer.style.backgroundImage = 'url(' + featuredPlaceholderSrc + ')';
         featuredContainer.style.animationName = "fade-in";
+        featuredWrapper.style.animationName = "fade-in";
         eventTitle.style.animationName = "fade-in";
     }
 
