@@ -119,11 +119,17 @@ body.home {
 }
 
 .featured.event.slider {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+  transition: background-color 0.4s;
 }
 
 .featured.event.slider:hover {
