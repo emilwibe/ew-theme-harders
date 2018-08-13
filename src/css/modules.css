@@ -75,22 +75,25 @@
     -ms-overflow-style: -ms-autohiding-scrollbar;
     transition:background-color 0.4s;
 }
-.featured.event.slider:hover{
+.featured.event.slide{
+    background-color:rgba(255, 255, 255, 0);
+    width:25%;
+    padding:50px;
+    text-decoration:none;
+    transition:background-color 0.4s;
+}
+.feature.event.slide:hover{
     background-color:rgba(255, 255, 255, 0.5);
 }
-.featured.event.slider:hover *{
+.featured.event.slide:hover *{
     color:#333;
-}
-.featured.event.slide{
-    width:25%;
-    padding:20px;
-    text-decoration:none;
 }
 .featured.event.slide *{
     color:#fff;
     text-transform:uppercase;
     font-family:'Ubuntu', sans-serif;
     margin:0;
+    transition:color 0.4s;
 }
 .featured.event.slide * + *{
     margin-top:10px;
