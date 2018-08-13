@@ -43,7 +43,7 @@
                 featuredWrapper.style.animationDelay = "0.75s";
                 featuredWrapper.style.animationDuration = "1.5s";
                 featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
-            }, 2000);
+            }, 1500);
         }
     }
 
