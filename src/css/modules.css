@@ -16,7 +16,7 @@
     animation-fill-mode:forwards;
 }
 .featured.wrapper{
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(255, 255, 255, 0.5);
     padding:20px;
     margin:auto;
     margin-left:10%;
@@ -61,4 +61,23 @@
     animation-fill-mode:forwards;
     animation-duration:0.8s;
     animation-delay:1.6s;
+}
+.featured.event.slider{
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.featured.event.slider:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.featured.event.slide{
+    width:20%;
+}
+.featured.event.slide *{
+    color:#fff;
+}
+.featured.event.slide:hover *{
+    color:#333;
 }

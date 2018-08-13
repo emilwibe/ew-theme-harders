@@ -21,7 +21,7 @@
 
   $args = array(
       'post_type' => 'event',
-      'posts_per_page' => -1,
+      'posts_per_page' => 1,
       'meta_query' => array(
           'key' => 'event_datetime',
           'compare' => 'BETWEEN',
@@ -33,12 +33,8 @@
   $the_query = new WP_Query($args);
   ?>
   <?php if($the_query->have_posts()) : ?>
-    <?php
-        $firstComingEvent = true;
-    ?>
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
-    <?php if($firstComingEvent) : ?>
-
+    
         <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>" alt="" class="featured placeholder" id="featured-placeholder">
         <div class="featured image container" id="featured-container"></div><!--/.featured.image-->
 
@@ -48,9 +44,37 @@
             <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">Læs mere...</a>
         </div><!--/.wrapper.sm-->
 
-    <?php $firstComingEvent = false; ?>
-    <?php else : ?>
-    <?php endif; ?>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
   <?php endif; ?>
+
+  <?php
+  $args = array(
+    'post_type' => 'event',
+    'posts_per_page' => 1,
+    'offset' => 1,
+    'meta_query' => array(
+        'key' => 'event_datetime',
+        'compare' => 'BETWEEN',
+        'value' => array($date_now, $date_next_year),
+        'type' => 'DATETIME'
+    )
+);
+
+$the_query = new WP_Query($args);
+?>
+
+<?php if($the_query->have_posts()) : ?>
+
+    <div class="featured event slider" id="featured-slider">
+    <?php while($the_query-have_posts()) : $the_query->the_post(); ?>
+
+    <div class="featured event slide">
+        <h2><?php the_title(); ?></h2>
+    </div><!--/.featured.slide-->
+
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+
+    </div><!--/.event.slider-->
+<?php endif; ?>
