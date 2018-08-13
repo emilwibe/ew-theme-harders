@@ -31,9 +31,14 @@
     if(featuredEventArrayLength){
         for(let i = 0 ; i < featuredEventArrayLength ; i += 1){
             var newEl = document.createElement("a");
+            var newHeading = document.createElement("h2");
+            var newTime = document.createElement("time");
             newEl.classList.add("featured", "event", "slide");
-            newEl.setAttribute("href", featuredEventArray[i]["eventTitle"]);
-            newEl.appendChild(document.createElement("h2").innerHTML = featuredEventArray[i]["eventTitle"]);
+            newEl.setAttribute("href", featuredEventArray[i]["eventLink"]);
+            newHeading.innerHTML = featuredEventArray[i]["eventTitle"];
+            newTime.innerHTML = featuredEventArray[i]["eventTime"];
+            newEl.appendChild(newHeading);
+            newEl.appendChild(newTime);
             featuredSlider.appendChild(newEl);
         }
     }
