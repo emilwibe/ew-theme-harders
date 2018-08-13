@@ -82,11 +82,16 @@
     color:#333;
 }
 .featured.event.slide{
-    width:20%;
-    padding:10px;
+    width:25%;
+    padding:20px;
     text-decoration:none;
 }
 .featured.event.slide *{
     color:#fff;
     text-transform:uppercase;
+    font-family:'Ubuntu', sans-serif;
+    margin:0;
+}
+.featured.event.slide * + *{
+    margin-top:10px;
 }
