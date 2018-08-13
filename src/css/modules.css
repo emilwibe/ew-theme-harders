@@ -52,3 +52,11 @@
     animation-duration:0.8s;
     animation-delay:1.2s;
 }
+.featured.event.link{
+    font-family:'Ubuntu', sans-serif;
+    color:#333;
+    opacity:0;
+    animation-fill-mode:forwards;
+    animation-duration:0.8s;
+    animation-delay:1.6s;
+}
