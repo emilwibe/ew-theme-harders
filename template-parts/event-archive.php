@@ -44,7 +44,7 @@
 
         <div class="featured wrapper sm2" id="featured-wrapper">
             <h2 class="featured event title" id="event-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
-            <time><?php echo get_field('event_datetime'); ?></time>
+            <time><?php echo date_format(get_field('event_datetime'), "d/m"); ?></time>
         </div><!--/.wrapper.sm-->
 
     <?php $firstComingEvent = false; ?>
