@@ -73,7 +73,6 @@
     overflow-x:auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    transition:background-color 0.4s;
 }
 .featured.event.slide{
     background-color:rgba(255, 255, 255, 0);
@@ -82,7 +81,7 @@
     text-decoration:none;
     transition:background-color 0.4s;
 }
-.feature.event.slide:hover{
+.featured.event.slide:hover{
     background-color:rgba(255, 255, 255, 0.5);
 }
 .featured.event.slide:hover *{
