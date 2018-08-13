@@ -29,7 +29,13 @@
     }
 
     if(featuredEventArrayLength){
-        console.log("it is all fine now");
+        for(let i = 0 ; i < featuredEventArrayLength ; i += 1){
+            var newEl = document.createElement("a");
+            newEl.classList.add("featured", "event", "slide");
+            newEl.setAttribute("href", featuredEventArray[i]["eventTitle"]);
+            newEl.innerHTML = featuredEventArray[i]["eventTitle"];
+            featuredSlider.appendChild(newEL);
+        }
     }
 
 })();
