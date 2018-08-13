@@ -12,7 +12,7 @@
     background-size:cover;
     background-position:center;
     opacity:0;
-    animation-duration:0.8s;
+    animation-duration:1.5s;
     animation-fill-mode:forwards;
 }
 .featured.wrapper{
@@ -21,9 +21,9 @@
     margin:auto;
     margin-left:10%;
     opacity:0;
-    animation-duration:0.8s;
+    animation-duration:1.5s;
     animation-fill-mode:forwards;
-    animation-delay:0.4s;
+    animation-delay:0.75s;
 }
 .featured.wrapper *{
     margin:0;
@@ -37,10 +37,10 @@
     font-size:72px;
     font-weight:700;
     text-transform:uppercase;
-    animation-duration:0.8s;
+    animation-duration:1.5s;
     opacity:0;
     animation-fill-mode:forwards;
-    animation-delay:0.8s;
+    animation-delay:1.5s;
 }
 .featured.event.date{
     font-family:'Ubuntu', sans-serif;
@@ -49,8 +49,8 @@
     color:#333;
     opacity:0;
     animation-fill-mode:forwards;
-    animation-duration:0.8s;
-    animation-delay:1.2s;
+    animation-duration:1.5s;
+    animation-delay:2.25s;
 }
 .featured.event.link{
     font-family:'Ubuntu', sans-serif;
@@ -59,8 +59,8 @@
     display:block;
     opacity:0;
     animation-fill-mode:forwards;
-    animation-duration:0.8s;
-    animation-delay:1.6s;
+    animation-duration:1.5s;
+    animation-delay:3s;
 }
 .featured.event.slider{
     min-width:100%;

@@ -42,7 +42,7 @@
         }
     }
 
-    setInterval(featuredSwitchContent, 5000);
+    setInterval(featuredSwitchContent, 10000);
 
     if(featuredPlaceholder && featuredContainer){
         featuredPlaceholder.addEventListener("load", function(e){
