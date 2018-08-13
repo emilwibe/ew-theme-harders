@@ -5,6 +5,7 @@
         featuredContainer = document.getElementById("featured-container"),
         featuredWrapper = document.getElementById("featured-wrapper"),
         eventTitle = document.getElementById("event-title")
+        
     ;
 
     function featuredImageLoad(){
