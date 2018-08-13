@@ -38,7 +38,9 @@
             featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
             featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
             featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
-            featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
+            setTimeout(function(){
+                featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
+            }, 1500);
         }
     }
 
