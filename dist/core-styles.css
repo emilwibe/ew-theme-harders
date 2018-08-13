@@ -96,3 +96,14 @@ body.home {
   animation-delay: 0.8s;
 }
 
+.featured.event.date {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+  animation-delay: 1.2s;
+}
+

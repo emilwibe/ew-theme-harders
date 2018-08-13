@@ -4,8 +4,9 @@
         featuredPlaceholderSrc,
         featuredContainer = document.getElementById("featured-container"),
         featuredWrapper = document.getElementById("featured-wrapper"),
-        eventTitle = document.getElementById("event-title")
-        
+        featuredTitle = document.getElementById("featured-title"),
+        featuredDate = document.getElementById("featured-date")
+
     ;
 
     function featuredImageLoad(){
@@ -13,7 +14,8 @@
         featuredContainer.style.backgroundImage = 'url(' + featuredPlaceholderSrc + ')';
         featuredContainer.style.animationName = "fade-in";
         featuredWrapper.style.animationName = "fade-in";
-        eventTitle.style.animationName = "fade-in";
+        featuredTitle.style.animationName = "fade-in";
+        featuredDate.style.animationName = "fade-in";
     }
 
     if(featuredPlaceholder && featuredContainer){
