@@ -41,7 +41,7 @@
                 featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
                 featuredWrapper.style.animationDelay = "0.75s";
                 featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
-            }, 1500);
+            }, 2000);
         }
     }
 
