@@ -29,7 +29,11 @@
             'value' => array($date_now, $date_next_year),
             'type' => 'DATETIME'
           )
-      )
+        ),
+        'order' => 'ASC',
+        'orderby' => 'meta_value',
+        'meta_key' => 'event_datetime',
+        'meta_type' => 'DATETIME'
   );
 
   $the_query = new WP_Query($args);
