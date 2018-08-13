@@ -48,33 +48,22 @@
     <?php wp_reset_postdata(); ?>
   <?php endif; ?>
 
-  <?php
-  $args = array(
-    'post_type' => 'event',
-    'posts_per_page' => 1,
-    'offset' => 1,
-    'meta_query' => array(
-        'key' => 'event_datetime',
-        'compare' => 'BETWEEN',
-        'value' => array($date_now, $date_next_year),
-        'type' => 'DATETIME'
-    )
-);
-
-$the_query = new WP_Query($args);
-?>
-
-<?php if($the_query->have_posts()) : ?>
-
-    <div class="featured event slider" id="featured-slider">
+ 
+ <?php //ARRAY OF EVENT OBJECT ?>
+ <?php if($the_query->have_posts()) : ?>
+    
+    <script>
+        var featuredEventArray = [],
+            eventSingle
+        ;
     <?php while($the_query-have_posts()) : $the_query->the_post(); ?>
 
-    <div class="featured event slide">
-        <h2><?php the_title(); ?></h2>
-    </div><!--/.featured.slide-->
+        eventSingle = {
+            "Title": "<?php the_title(); ?>"
+        }
 
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
 
-    </div><!--/.event.slider-->
+    </script>
 <?php endif; ?>
