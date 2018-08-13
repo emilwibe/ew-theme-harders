@@ -5,7 +5,8 @@
         featuredContainer = document.getElementById("featured-container"),
         featuredWrapper = document.getElementById("featured-wrapper"),
         featuredTitle = document.getElementById("featured-title"),
-        featuredDate = document.getElementById("featured-date")
+        featuredDate = document.getElementById("featured-date"),
+        featuredLink = document.getElementById("featured-link")
 
     ;
 
@@ -16,6 +17,7 @@
         featuredWrapper.style.animationName = "fade-in";
         featuredTitle.style.animationName = "fade-in";
         featuredDate.style.animationName = "fade-in";
+        featuredLink.style.animationName = "fade-in";
     }
 
     if(featuredPlaceholder && featuredContainer){
