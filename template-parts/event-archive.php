@@ -23,10 +23,12 @@
       'post_type' => 'event',
       'posts_per_page' => 1,
       'meta_query' => array(
-          'key' => 'event_datetime',
-          'compare' => 'BETWEEN',
-          'value' => array($date_now, $date_next_year),
-          'type' => 'DATETIME'
+          array(
+            'key' => 'event_datetime',
+            'compare' => 'BETWEEN',
+            'value' => array($date_now, $date_next_year),
+            'type' => 'DATETIME'
+          )
       )
   );
 
@@ -55,7 +57,7 @@
   <?php
     $args = array(
         'post_type' => 'event',
-        'posts_per_page' => -1,
+        'posts_per_page' => 200,
         'meta_query' => array(
             'key' => 'event_datetime',
             'compare' => 'BETWEEN',
