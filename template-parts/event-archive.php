@@ -56,11 +56,13 @@
         var featuredEventArray = [],
             eventSingle
         ;
-    <?php while($the_query-have_posts()) : $the_query->the_post(); ?>
+
+    <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 
         eventSingle = {
             "Title": "<?php the_title(); ?>"
         }
+        featuredEventArray.push(eventSingle);
 
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
