@@ -18,6 +18,7 @@
 .featured.wrapper{
     background-color:rgba(255, 255, 255, 0.8);
     padding:20px;
+    margin:auto;
 }
 .featured.event.title{
     color:#333;
