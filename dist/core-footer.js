@@ -32,6 +32,7 @@
             }
             featuredContainer.style.animationName = "fade-out";
             featuredWrapper.style.animationName = "fade-out";
+            featuredWrapper.style.animationDuration = "0.10s";
             featuredTitle.style.animationName = "fade-out";
             featuredDate.style.animationName = "fade-out";
             featuredLink.style.animationName = "fade-out";
@@ -40,6 +41,7 @@
                 featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
                 featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
                 featuredWrapper.style.animationDelay = "0.75s";
+                featuredWrapper.style.animationDuration = "1.5s";
                 featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
             }, 2000);
         }
