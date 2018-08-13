@@ -24,6 +24,7 @@
     animation-duration:1s;
     animation-fill-mode:forwards;
     animation-delay:0.75s;
+    -webkit-transform-style: preserve-3d;
 }
 .featured.wrapper *{
     margin:0;
