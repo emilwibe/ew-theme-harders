@@ -48,6 +48,20 @@
     <?php wp_reset_postdata(); ?>
   <?php endif; ?>
 
+  <?php
+    $args = array(
+        'post_type' => 'event',
+        'posts_per_page' => -1,
+        'meta_query' => array(
+            'key' => 'event_datetime',
+            'compare' => 'BETWEEN',
+            'value' => array($date_now, $date_next_year),
+            'type' => 'DATETIME'
+        )
+    );
+    $the_query = new WP_Query($args);
+?>
+
  
  <?php //ARRAY OF EVENT OBJECT ?>
  <?php if($the_query->have_posts()) : ?>
