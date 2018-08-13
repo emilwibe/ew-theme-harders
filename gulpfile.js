@@ -9,14 +9,14 @@ const   gulp = require("gulp"),
 gulp.task("css", function(){
     return gulp.src("./src/**/*.css")
         .pipe(concatCSS("core-styles.css"))
-        .pipe(cleanCSS())
+        //.pipe(cleanCSS())
         .pipe(gulp.dest("./dist"))
 });
 
 gulp.task("js-footer", function(){
     return gulp.src("./src/js/footer/**/*.js")
         .pipe(concat("core-footer.js"))
-        .pipe(minify())
+        //.pipe(minify())
         .pipe(gulp.dest("./dist"))
 });
 
