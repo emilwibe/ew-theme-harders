@@ -63,11 +63,17 @@
         'post_type' => 'event',
         'posts_per_page' => 200,
         'meta_query' => array(
-            'key' => 'event_datetime',
-            'compare' => 'BETWEEN',
-            'value' => array($date_now, $date_next_year),
-            'type' => 'DATETIME'
-        )
+            array(
+              'key' => 'event_datetime',
+              'compare' => 'BETWEEN',
+              'value' => array($date_now, $date_next_year),
+              'type' => 'DATETIME'
+            )
+          ),
+        'order' => 'ASC',
+        'orderby' => 'meta_value',
+        'meta_key' => 'event_datetime',
+        'meta_type' => 'DATETIME'
     );
     $the_query = new WP_Query($args);
 ?>
