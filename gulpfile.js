@@ -16,7 +16,7 @@ gulp.task("css", function(){
 gulp.task("js-footer", function(){
     return gulp.src("./src/js/footer/**/*.js")
         .pipe(concat("core-footer.js"))
-        //.pipe(minify())
+        .pipe(minify())
         .pipe(gulp.dest("./dist"))
 });
 
