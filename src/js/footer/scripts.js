@@ -30,9 +30,10 @@
             } else {
                 featuredEventCounter += 1;
             }
-            featuredContainer.style.animationName = "fade-out";
+            featuredWrapper.style.animationDelay = "0s";
             featuredWrapper.style.animationDuration = "0.10s";
             featuredWrapper.style.animationName = "fade-out";
+            featuredContainer.style.animationName = "fade-out";
             featuredTitle.style.animationName = "fade-out";
             featuredDate.style.animationName = "fade-out";
             featuredLink.style.animationName = "fade-out";
@@ -43,7 +44,7 @@
                 featuredWrapper.style.animationDelay = "0.75s";
                 featuredWrapper.style.animationDuration = "1.5s";
                 featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
-            }, 1800);
+            }, 2000);
         }
     }
 
