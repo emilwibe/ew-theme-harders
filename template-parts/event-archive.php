@@ -70,14 +70,13 @@
         var featuredEventArray = [],
             eventSingle
         ;
-
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
-
         eventSingle = {
-            "Title": "<?php the_title(); ?>"
+            "title": "<?php the_title(); ?>",
+            "time": "<?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?>",
+            "link": "<?php echo get_the_permalink(); ?>"
         }
         featuredEventArray.push(eventSingle);
-
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
 
