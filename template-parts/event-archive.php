@@ -48,6 +48,10 @@
     <?php wp_reset_postdata(); ?>
   <?php endif; ?>
 
+    <div class="featured event slider" id="featured-slider">
+
+    </div><!--/.featured.event.slider-->
+
   <?php
     $args = array(
         'post_type' => 'event',
@@ -61,7 +65,6 @@
     );
     $the_query = new WP_Query($args);
 ?>
-
  
  <?php //ARRAY OF EVENT OBJECT ?>
  <?php if($the_query->have_posts()) : ?>
@@ -72,9 +75,9 @@
         ;
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
         eventSingle = {
-            "title": "<?php the_title(); ?>",
-            "time": "<?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?>",
-            "link": "<?php echo get_the_permalink(); ?>"
+            "eventTitle": "<?php the_title(); ?>",
+            "eventTime": "<?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?>",
+            "eventLink": "<?php echo get_the_permalink(); ?>"
         }
         featuredEventArray.push(eventSingle);
     <?php endwhile; ?>

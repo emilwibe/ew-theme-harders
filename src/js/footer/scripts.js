@@ -6,7 +6,9 @@
         featuredWrapper = document.getElementById("featured-wrapper"),
         featuredTitle = document.getElementById("featured-title"),
         featuredDate = document.getElementById("featured-date"),
-        featuredLink = document.getElementById("featured-link")
+        featuredLink = document.getElementById("featured-link"),
+        featuredSlider = document.getElementById("featured-slider"),
+        featuredEventArrayLength = featuredEventArray.length
 
     ;
 
@@ -25,4 +27,9 @@
             featuredImageLoad();
         }, false);
     }
+
+    if(featuredEventArrayLength){
+        console.log("it is all fine now");
+    }
+
 })();
