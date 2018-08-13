@@ -34,7 +34,7 @@
             newEl.classList.add("featured", "event", "slide");
             newEl.setAttribute("href", featuredEventArray[i]["eventTitle"]);
             newEl.innerHTML = featuredEventArray[i]["eventTitle"];
-            featuredSlider.appendChild(newEL);
+            featuredSlider.appendChild(newEl);
         }
     }
 
