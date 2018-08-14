@@ -76,6 +76,7 @@
             scrollNum = 0
         ;
         document.addEventListener("wheel", function(e){
+            e.preventDefault();
             scrollMax = featuredSlider.scrollWidth - featuredSlider.clientWidth;
             if(scrollNum > 0 || scrollNum < scrollMax){
                 console.log("scrollNum " + scrollNum);
