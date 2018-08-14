@@ -169,9 +169,9 @@ body.home {
   font-size: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:440px) {
   .featured.event.title {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 
@@ -180,12 +180,6 @@ body.home {
     padding: 50px;
   }
 
-  .featured.event.slide h2 {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width:860px) {
   .featured.event.title {
     font-size: 72px;
   }
