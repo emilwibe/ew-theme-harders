@@ -120,29 +120,24 @@ body.home {
 }
 
 .featured.event.slider {
-  min-width: 100%;
   position: fixed;
   z-index: 5;
   left: 0;
   bottom: 0;
   overflow-x: auto;
+  white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.featured.event.slider::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .featured.event.slide {
   background-color: rgba(255, 255, 255, 0);
-  min-width: 25%;
+  width: 25%;
   padding: 50px;
   text-decoration: none;
   transition: background-color 0.4s;
-  float: left;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .featured.event.slide:hover {
