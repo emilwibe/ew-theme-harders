@@ -72,9 +72,11 @@
         }
     }
     if(homePage.length){
+        var scrollNum = 0;
         document.addEventListener("wheel", function(e){
             console.log(e);
-            featuredSlider.scrollLeft = 20;
+            scrollNum += 10;
+            featuredSlider.scrollLeft = scrollNum;
         }, false);
     }
 })();
