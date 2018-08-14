@@ -78,6 +78,7 @@
         document.addEventListener("wheel", function(e){
             scrollMax = featuredSlider.scrollWidth - featuredSlider.clientWidth;
             if(scrollNum > 0 || scrollNum < scrollMax){
+                console.log("scrollNum " + scrollNum);
                 scrollNum += e.deltaX + e.deltaY;
                 featuredSlider.scrollLeft = scrollNum;
             }  
