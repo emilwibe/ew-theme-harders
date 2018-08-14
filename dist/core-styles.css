@@ -33,6 +33,7 @@ body {
 body.home {
   height: 100vh;
   display: flex;
+  background-color: #000;
 }
 .wrapper {
   margin: 0 auto;
@@ -164,7 +165,7 @@ body.home {
 }
 
 .featured.event.slide h2 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 @media screen and (min-width:480px) {

@@ -8,4 +8,5 @@ html, body{
 body.home{
     height:100vh;
     display:flex;
+    background-color:#000;
 }
