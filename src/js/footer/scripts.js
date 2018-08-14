@@ -75,7 +75,7 @@
         var scrollNum = 0;
         document.addEventListener("wheel", function(e){
             scrollNum += e.deltaY;
-            console.log("scrollNum: + "scrollNum;)
+            console.log("scrollNum: " + scrollNum);
             featuredSlider.scrollLeft = scrollNum;
         }, false);
     }
