@@ -125,11 +125,15 @@ body.home {
   z-index: 5;
   left: 0;
   bottom: 0;
-  display: flex;
-  flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.featured.event.slider::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .featured.event.slide {
@@ -138,6 +142,7 @@ body.home {
   padding: 50px;
   text-decoration: none;
   transition: background-color 0.4s;
+  float: left;
 }
 
 .featured.event.slide:hover {
