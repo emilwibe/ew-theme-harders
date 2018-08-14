@@ -71,9 +71,9 @@
             featuredSlider.appendChild(newEl);
         }
     }
-    console.log(homePage.length);
     if(homePage.length){
         document.addEventListener("wheel", function(e){
+            console.log(e);
             featuredSlider.scrollLeft = 20;
         }, false);
     }
