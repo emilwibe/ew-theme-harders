@@ -48,7 +48,7 @@
             }
         }
     
-        setInterval(featuredSwitchContent, 15000);
+        setInterval(featuredSwitchContent, 20000);
     
         if(featuredPlaceholder && featuredContainer){
             featuredPlaceholder.addEventListener("load", function(e){
