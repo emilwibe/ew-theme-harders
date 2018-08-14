@@ -57,7 +57,7 @@
     }
 
     if(featuredEventArray.length){
-        for(let i = 0 ; i < featuredEventArrayLength ; i += 1){
+        for(let i = 0 ; i < featuredEventArray.length ; i += 1){
             var newEl = document.createElement("a");
             var newHeading = document.createElement("h2");
             var newTime = document.createElement("time");
