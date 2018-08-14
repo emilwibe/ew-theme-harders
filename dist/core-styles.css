@@ -163,6 +163,10 @@ body.home {
   margin-top: 10px;
 }
 
+.featured.event.slide h2 {
+  font-size: 24px;
+}
+
 @media screen and (min-width:480px) {
   .featured.event.title {
     font-size: 32px;
@@ -172,6 +176,10 @@ body.home {
 @media screen and (min-width:600px) {
   .featured.event.slide {
     padding: 50px;
+  }
+
+  .featured.event.slide h2 {
+    font-size: 24px;
   }
 }
 
