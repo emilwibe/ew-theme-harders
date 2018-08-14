@@ -71,14 +71,16 @@
             featuredSlider.appendChild(newEl);
         }
     }
-    console.log(featuredSlider.scrollWidth - featuredSlider.clientWidth);
     if(homePage.length){
-        var scrollNum = 0;
+        var scrollMax,
+            scrollNum = 0
+        ;
         document.addEventListener("wheel", function(e){
-
-            scrollNum += e.deltaY;
-            console.log("scrollNum: " + scrollNum);
-            featuredSlider.scrollLeft = scrollNum;
+            scrollMax = featuredSlider.scrollWidth - featuredSlider.clientWidth;
+            if(scrollNum > 0 || scrollNum < scrollMax){
+                scrollNum += e.deltaX + e.deltaY;
+                featuredSlider.scrollLeft = scrollNum;
+            }  
         }, false);
     }
 })();
