@@ -9,7 +9,6 @@
         featuredDate = document.getElementById("featured-date"),
         featuredLink = document.getElementById("featured-link"),
         featuredSlider = document.getElementById("featured-slider"),
-        featuredEventArrayLength = featuredEventArray.length,
         featuredEventCounter = 0
 
     ;
@@ -25,8 +24,8 @@
         featuredLink.style.animationName = "fade-in";
     }
     function featuredSwitchContent(){
-        if(featuredEventArrayLength > 2){
-            if(featuredEventCounter == featuredEventArrayLength - 1){
+        if(featuredEventArray.length > 2){
+            if(featuredEventCounter == featuredEventArray.length - 1){
                 featuredEventCounter = 0;
             } else {
                 featuredEventCounter += 1;
@@ -57,7 +56,7 @@
         }, false);
     }
 
-    if(featuredEventArrayLength){
+    if(featuredEventArray.length){
         for(let i = 0 ; i < featuredEventArrayLength ; i += 1){
             var newEl = document.createElement("a");
             var newHeading = document.createElement("h2");
