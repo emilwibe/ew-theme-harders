@@ -88,7 +88,6 @@ body.home {
 .featured.event.title {
   color: #333;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 72px;
   font-weight: 700;
   text-transform: uppercase;
   animation-duration: 1.5s;
@@ -133,7 +132,7 @@ body.home {
 
 .featured.event.slide {
   background-color: rgba(255, 255, 255, 0);
-  padding: 50px;
+  padding: 20px;
   text-decoration: none;
   transition: background-color 0.4s;
   display: inline-block;
@@ -158,5 +157,23 @@ body.home {
 
 .featured.event.slide * + * {
   margin-top: 10px;
+}
+
+@media screen and (min-width:480px) {
+  .featured.event.title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:600px) {
+  .featured.event.slide {
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width:860px) {
+  .featured.event.title {
+    font-size: 72px;
+  }
 }
 
