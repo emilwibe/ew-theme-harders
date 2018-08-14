@@ -79,7 +79,7 @@
             e.preventDefault();
             scrollMax = featuredSlider.scrollWidth - featuredSlider.clientWidth;
             console.log("scrollMax: " + scrollMax);
-            if(scrollNum > 0 || scrollNum < scrollMax){
+            if(scrollNum > 0 && scrollNum < scrollMax){
                 console.log("scrollNum " + scrollNum);
                 scrollNum += e.deltaX + e.deltaY;
                 featuredSlider.scrollLeft = scrollNum;
