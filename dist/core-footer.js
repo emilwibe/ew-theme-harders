@@ -1,6 +1,7 @@
 (function(){
     //DOM
-    var featuredPlaceholder = document.getElementById("featured-placeholder"),
+    var homePage = document.getElementsByClassName("home"),
+        featuredPlaceholder = document.getElementById("featured-placeholder"),
         featuredPlaceholderSrc,
         featuredContainer = document.getElementById("featured-container"),
         featuredWrapper = document.getElementById("featured-wrapper"),
@@ -71,16 +72,9 @@
         }
     }
 
-    document.addEventListener('wheel', function(e){
-        if(e.type != 'wheel'){
-            return;
-        }
-        var delta = ((e.deltaY || -e.wheelDelta || e.detail) >> 10) || 1;
-        delta = delta * (-300);
-        document.featuredSlider.scrollLeft -= delta;    
-        // safari needs also this
-        document.body.scrollLeft -= delta;    
-        e.preventDefault();
-    });
-
+    if(homePage.length){
+        document.addEventListener("wheel", function(e){
+            featuredSlider.scrollLeft = 20;
+        }, false);
+    }
 })();
