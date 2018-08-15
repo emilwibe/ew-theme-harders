@@ -199,6 +199,11 @@ h6 {
   }
 }
 
+.wysiwyg * {
+  line-height: 1.5;
+  font-size: 22px;
+}
+
 .logo-link {
   position: absolute;
   top: 10px;
