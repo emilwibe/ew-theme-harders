@@ -122,4 +122,19 @@
     line-height:1.6;
     font-size:20px;
     color:#333;
+    max-width:100%;
+}
+.wp-block-embed.is-type-video{
+    height:0;
+    width:100%;
+    padding-bottom:56.25%;
+    overflow:hidden;
+    position:relative;
+}
+.wp-block-embed .is-type-video > *{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
 }
