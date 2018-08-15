@@ -22,7 +22,7 @@
     margin:auto;
     position: absolute;
     top:50%;
-    left:0;
+    right:0;
     transform:translateY(-50%);
     opacity:0;
     animation-duration:1s;
@@ -71,7 +71,7 @@
     width:100%;
     position:fixed;
     z-index:5;
-    right:0;
+    left:0;
     bottom:0;
     overflow-x:auto;
     white-space:nowrap;
