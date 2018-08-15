@@ -212,3 +212,8 @@ h6 {
   background-color: #fff;
   padding: 5px;
 }
+
+.thumbnail.default.full {
+  width: 100% !important;
+  height: auto !important;
+}
