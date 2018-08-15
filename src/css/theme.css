@@ -1,0 +1,12 @@
+.logo-link{
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index:100;
+}
+.logo-link img{
+    width:100px;
+    height:auto;
+    background-color:#fff;
+    padding:5px;
+}
