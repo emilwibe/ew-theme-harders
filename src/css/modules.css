@@ -71,7 +71,7 @@
     width:100%;
     position:fixed;
     z-index:5;
-    left:0;
+    right:0;
     bottom:0;
     overflow-x:auto;
     white-space:nowrap;
