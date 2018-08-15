@@ -49,6 +49,10 @@ h6 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
+
+main {
+  background-color: #fff;
+}
 .wrapper {
   margin: 0 auto;
   width: 96%;
@@ -200,8 +204,9 @@ h6 {
 }
 
 .wysiwyg * {
-  line-height: 1.5;
-  font-size: 22px;
+  line-height: 1.6;
+  font-size: 20px;
+  color: #333;
 }
 
 .logo-link {
@@ -221,4 +226,15 @@ h6 {
 .thumbnail.default.full {
   width: 100% !important;
   height: auto !important;
+}
+
+.single main {
+  position: relative;
+  margin-top: -100;
+  z-index: 10;
+  padding: 20px;
+}
+
+.single main > *:first-child {
+  margin-top: 0;
 }

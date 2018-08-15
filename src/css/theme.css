@@ -14,3 +14,12 @@
     width:100% !important;
     height:auto !important;
 }
+.single main{
+    position:relative;
+    margin-top:-100;
+    z-index:10;
+    padding:20px;
+}
+.single main > *:first-child{
+    margin-top:0;
+}
