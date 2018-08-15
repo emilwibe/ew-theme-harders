@@ -45,9 +45,10 @@
         <div class="featured image container" id="featured-container"></div><!--/.featured.image-->
 
         <div class="featured wrapper sm2" id="featured-wrapper">
+        <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">
             <h2 class="featured event title" id="featured-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
             <time class="featured event date" id="featured-date"><?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></time>
-            <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">Læs mere...</a>
+        </a>
         </div><!--/.wrapper.sm-->
 
     <?php endwhile; ?>
