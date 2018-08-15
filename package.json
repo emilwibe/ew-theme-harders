@@ -1,8 +1,8 @@
 {
   "name": "ew-theme-harders",
   "version": "1.0.0",
-  "description": "WordPress Theme for Harders",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,14 +16,12 @@
     "url": "https://github.com/emilwibe/ew-theme-harders/issues"
   },
   "homepage": "https://github.com/emilwibe/ew-theme-harders#readme",
-  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.4",
+    "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-minify": "^3.1.0",
-    "gulp-sass": "^4.0.1",
-    "gulp4": "^4.0.3"
+    "gulp-sass": "^4.0.1"
   }
 }
