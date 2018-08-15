@@ -213,12 +213,14 @@ main {
 .wp-block-embed.is-type-video {
   height: 0;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
   position: relative;
 }
 
-.wp-block-embed .is-type-video > * {
+.wp-block-embed.is-type-video > * {
   width: 100%;
   height: 100%;
   position: absolute;
