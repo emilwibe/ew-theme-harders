@@ -49,7 +49,6 @@
         }
 
         featuredSwitchContent();
-    
         setInterval(featuredSwitchContent, 20000);
     
         if(featuredPlaceholder && featuredContainer){
