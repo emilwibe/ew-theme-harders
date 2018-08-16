@@ -69,10 +69,6 @@ main {
   display: none;
 }
 
-.enhanced .featured.image.container {
-  opacity: 0;
-}
-
 .featured.image.container {
   width: 100vw;
   height: 100vh;
