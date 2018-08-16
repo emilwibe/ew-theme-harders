@@ -79,7 +79,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
