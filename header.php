@@ -12,3 +12,5 @@
     </script>
 
     <a href="<?php echo get_site_url(); ?>" class="logo-link"><img src="<?php echo get_template_directory_uri() . "/assets/harders-logo.svg"; ?>" alt="Harders Logo"></a>
+
+    <?php get_template_part('template-parts/nav', 'primary'); ?>
