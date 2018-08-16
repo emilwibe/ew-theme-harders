@@ -41,8 +41,8 @@
   <?php if($the_query->have_posts()) : ?>
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
     
-        <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>" alt="" class="featured placeholder" id="featured-placeholder">
-        <div class="featured image container" id="featured-container"></div><!--/.featured.image-->
+        <img src="" alt="" class="featured placeholder" id="featured-placeholder">
+        <div class="featured image container" id="featured-container" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, 'full'); ?>'); ?>"></div><!--/.featured.image-->
 
         <div class="featured wrapper sm2" id="featured-wrapper">
         <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">

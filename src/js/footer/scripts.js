@@ -25,11 +25,6 @@
         }
         function featuredSwitchContent(){
             if(featuredEventArray.length > 1){
-                if(featuredEventCounter == featuredEventArray.length - 1){
-                    featuredEventCounter = 0;
-                } else {
-                    featuredEventCounter += 1;
-                }
                 featuredWrapper.style.animationDelay = "0s";
                 featuredWrapper.style.animationDuration = "0.10s";
                 featuredWrapper.style.animationName = "fade-out";
@@ -45,6 +40,11 @@
                     featuredWrapper.style.animationDuration = "1.5s";
                     featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
                 }, 2000);
+                if(featuredEventCounter == featuredEventArray.length - 1){
+                    featuredEventCounter = 0;
+                } else {
+                    featuredEventCounter += 1;
+                }
             }
         }
     
