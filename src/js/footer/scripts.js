@@ -47,6 +47,8 @@
                 }
             }
         }
+
+        featuredSwitchContent();
     
         setInterval(featuredSwitchContent, 20000);
     
