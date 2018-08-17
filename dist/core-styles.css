@@ -75,10 +75,21 @@ main {
   z-index: 100;
   transform: translateX(0);
   transition: transform 0.4s;
+  padding: 50px;
 }
 
 .nav.primary.is-hidden {
   transform: translateX(100%);
+}
+
+.nav.primary > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav.primary a {
+  color: #fff;
+  font-size: 24px;
 }
 
 .nav.toggle {
