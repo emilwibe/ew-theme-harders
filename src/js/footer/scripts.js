@@ -30,7 +30,6 @@
                 featuredContainer.style.animationName = "fade-out";
                 featuredTitle.style.animationName = "fade-out";
                 featuredDate.style.animationName = "fade-out";
-                featuredLink.style.animationName = "fade-out";
                 setTimeout(function(){
                     featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
                     featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
