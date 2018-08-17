@@ -16,6 +16,7 @@
 .nav.primary > ul{
     display:flex;
     flex-direction:column;
+    padding:100px 0 100px 0;
 }
 .nav.primary a{
     color:#fff;
