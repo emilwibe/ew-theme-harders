@@ -91,6 +91,9 @@ main {
 .nav.primary a {
   color: #fff;
   font-size: 24px;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .nav.toggle {
