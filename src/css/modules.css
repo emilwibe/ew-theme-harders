@@ -24,6 +24,9 @@
     background-color:#fff;
     text-decoration:none;
     line-height:50px;
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform:uppercase;
 }
 .featured.placeholder{
     display:none;
