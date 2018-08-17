@@ -6,11 +6,11 @@
     top:0;
     right:0;
     z-index:100;
-    transform:translateX(100%);
+    transform:translateX(0);
     transition:transform 0.4s;
 }
 .nav.primary.is-hidden{
-    transform:translateX(0);
+    transform:translateX(100%);
 }
 .nav.toggle{
     position:fixed;
@@ -20,7 +20,10 @@
     width:50px;
     height:50px;
     border-radius:50%;
+    color:#000;
     background-color:#fff;
+    text-decoration:none;
+    line-height:50px;
 }
 .featured.placeholder{
     display:none;
