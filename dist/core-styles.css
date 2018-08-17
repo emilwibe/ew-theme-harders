@@ -65,6 +65,15 @@ main {
 .wrapper.sm2 {
   max-width: 720px;
 }
+.nav.primary {
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .featured.placeholder {
   display: none;
 }
