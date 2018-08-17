@@ -101,6 +101,7 @@ main {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  opacity: 0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0.75s;
@@ -122,6 +123,7 @@ main {
   font-size: 28px;
   text-transform: uppercase;
   animation-duration: 1.5s;
+  opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
 }
@@ -131,6 +133,7 @@ main {
   font-size: 32px;
   font-weight: 700;
   color: #333;
+  opacity: 0;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-delay: 2.25s;
