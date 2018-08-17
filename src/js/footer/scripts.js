@@ -20,6 +20,16 @@
 
     }, false);
 
+    navPrimary.addEventListener("click", function(e){
+        if(e.target.tagName == "A"){
+            e.preventDefault();
+            navPrimary.classList.remove("is-hidden");
+            setTimeout(function(){
+                window.location.replace(e.target.getAttribute("href"));
+            }, 400);
+        }
+    }, false);
+
     if(homePage.length){
         function featuredImageLoad(){
             featuredPlaceholderSrc = featuredPlaceholder.getAttribute("src");
