@@ -89,13 +89,17 @@ main {
 }
 
 .nav.primary a {
-  color: #fff;
+  color: #aaa;
   font-size: 24px;
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
   padding-top: 20px;
+}
+
+.nav.primary .current-menu-item a {
+  color: #fff;
 }
 
 .nav.toggle {
