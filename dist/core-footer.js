@@ -1,6 +1,8 @@
 (function(){
     //DOM
-    var homePage = document.getElementsByClassName("home"),
+    var navToggle = document.getElementById("nav-toggle"),
+        navPrimary = document.getElementById("nav-primary"),
+        homePage = document.getElementsByClassName("home"),
         featuredPlaceholder = document.getElementById("featured-placeholder"),
         featuredPlaceholderSrc,
         featuredContainer = document.getElementById("featured-container"),
@@ -12,6 +14,12 @@
         featuredEventCounter = 0
 
     ;
+    navToggle.addEventListener("click", function(e){
+        e.preventDefault();
+        navPrimary.classList.toggle("is-hidden");
+
+    }, false);
+
     if(homePage.length){
         function featuredImageLoad(){
             featuredPlaceholderSrc = featuredPlaceholder.getAttribute("src");
