@@ -23,3 +23,9 @@
 .single main > *:first-child{
     margin-top:0;
 }
+.event.ticket{
+    background-color:#333;
+    color:#fff;
+    padding:10px;
+    margin-left:auto;
+}
