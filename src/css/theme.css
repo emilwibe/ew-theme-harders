@@ -24,8 +24,12 @@
     margin-top:0;
 }
 .event.ticket{
+    font-family: 'Ubuntu', sans-serif;
     background-color:#333;
+    text-transform:uppercase;
     color:#fff;
-    padding:10px;
+    padding:10px 20px;
+    display:block;
     margin-left:auto;
+    text-decoration:none;
 }

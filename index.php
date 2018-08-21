@@ -15,7 +15,7 @@
 
         <?php if(get_field('ticket_url')) : ?>
 
-            <a href="<?php the_field('ticket_url'); ?>" class="event ticket" target="_blank">Billet</a>
+            <a href="<?php the_field('ticket_url'); ?>" class="event ticket" target="_blank">Køb Billet</a>
         <?php endif; ?>
 
         <div class="wysiwyg"><?php the_content(); ?></div>
