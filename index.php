@@ -11,7 +11,11 @@
     <main class="wrapper sm">
     <?php while(have_posts()) : the_post(); ?>
 
-        <h1><?php the_title(); ?></h1>
+        <div class="heading wrapper">
+
+            <h1><?php the_title(); ?></h1>
+
+        </div><!--/.heading.wrapper-->
 
         <?php if(get_field('ticket_url')) : ?>
 
