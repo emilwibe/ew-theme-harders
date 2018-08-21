@@ -180,12 +180,18 @@
         font-size:72px;
     }
 }
+.wysiwyg{
+    background-color:#fff;
+}
 .wysiwyg *{
     line-height:1.6;
     font-size:20px;
     color:#333;
     max-width:100%;
     word-wrap:break-word;
+}
+.wysiwyg > *:first-child{
+    margin-top:0;
 }
 .wp-block-embed.is-type-video{
     height:0;
