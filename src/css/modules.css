@@ -203,3 +203,7 @@
     left:0;
     top:0;
 }
+.thumbnail.default.full.wp-post-image{
+    position: relative;
+    z-index:-1;
+}
