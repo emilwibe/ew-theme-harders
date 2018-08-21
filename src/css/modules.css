@@ -97,9 +97,11 @@
     font-size:28px;
     text-transform:uppercase;
     animation-duration:1.5s;
-    opacity:0;
     animation-fill-mode:forwards;
     animation-delay:1.5s;
+}
+.featured.event.title{
+    opacity:0;
 }
 .featured.event.date{
     font-family:'Ubuntu', sans-serif;
