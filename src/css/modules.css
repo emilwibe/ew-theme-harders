@@ -74,8 +74,8 @@
 }
 .heading.wrapper{
     top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    right:0;
+    transform:translateY(-50%);
 }
 .featured.wrapper, .heading.wrapper{
     background-color:rgba(255, 255, 255, 0.5);

@@ -11,7 +11,7 @@
     <main class="wrapper sm">
     <?php while(have_posts()) : the_post(); ?>
 
-        <div class="heading wrapper">
+        <div class="heading wrapper sm">
 
             <h1><?php the_title(); ?></h1>
 
