@@ -358,3 +358,17 @@ main {
   margin-left: auto;
   text-decoration: none;
 }
+
+.club25 {
+  width: 80px;
+  height: 80px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  line-height: 0.5;
+  color: #fff;
+  background-color: #83CECA;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

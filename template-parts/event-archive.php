@@ -47,9 +47,8 @@
         <div class="featured wrapper sm2" id="featured-wrapper">
         <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">
             <h2 class="featured event title" id="featured-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
-            <time class="featured event date" id="featured-date"><?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></time>
+            <time class="featured event date" id="featured-date"><?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></time><div class="club25" data-club="<?php the_field('event_klub_25'); ?>">Club<br><span>25</span></div>
         </a>
-        <div class="club25" data-club="<?php the_field('event_klub_25'); ?>">Club<br><span>25</span></div>
         </div><!--/.wrapper.sm-->
 
     <?php endwhile; ?>
