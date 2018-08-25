@@ -50,7 +50,7 @@
 .klub25[data-klub="Club25"]{
     display:inline;
 }
-.k25{
+.featured.event.slide .k25{
     color:#333;
     background-color:#83CECA;
 }
