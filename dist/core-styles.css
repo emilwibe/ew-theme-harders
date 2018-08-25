@@ -361,8 +361,10 @@ main {
 
 .club25 {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
-  line-height: 0.5;
+  line-height: 1.5;
   display: inline;
   color: #fff;
   background-color: #83CECA;
