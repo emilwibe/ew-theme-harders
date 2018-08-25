@@ -38,7 +38,11 @@
     font-weight:700;
     text-align:center;
     line-height:1.5;
-    display:inline;
-    color:#fff;
+    color:#333;
     background-color:#83CECA;
+    padding:0 10px;
+    display:none;
+}
+.klub25[data-klub="Club25"]{
+    display:inline;
 }

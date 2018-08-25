@@ -48,7 +48,7 @@
         <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">
             <h2 class="featured event title" id="featured-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
             <time class="featured event date" id="featured-date"><?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></time>
-            <div class="klub25" data-klub="<?php the_field('event_klub_25'); ?>">Klub25</div>
+            <div class="klub25" id="featured-klub" data-klub="<?php the_field('event_klub_25'); ?>">Klub25</div>
         </a>
         </div><!--/.wrapper.sm-->
 

@@ -10,6 +10,7 @@
         featuredTitle = document.getElementById("featured-title"),
         featuredDate = document.getElementById("featured-date"),
         featuredLink = document.getElementById("featured-link"),
+        featuredKlub = document.getElementById("featured-klub"),
         featuredSlider = document.getElementById("featured-slider"),
         featuredEventCounter = 0
 
