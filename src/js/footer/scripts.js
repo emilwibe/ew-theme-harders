@@ -30,6 +30,7 @@
             featuredWrapper.style.animationDelay = "0";
             featuredTitle.style.animationName = "fade-in";
             featuredDate.style.animationName = "fade-in";
+            featuredKlub.style.animationName = "fade-in";
         }
         function featuredSwitchContent(){
             if(featuredEventArray.length > 1){
@@ -39,7 +40,13 @@
                 featuredContainer.style.animationName = "fade-out";
                 featuredTitle.style.animationName = "fade-out";
                 featuredDate.style.animationName = "fade-out";
+                featuredKlub.style.animationName = "fade-out";
                 setTimeout(function(){
+                    if(featuredEventArray[featuredEventCounter]["klub25"]){
+                        featuredKlub.setAttribute("data-klub", "Club25");
+                    } else {
+                        featuredKlub.setAttribute("data-klub", "false");
+                    }
                     featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
                     featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
                     featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
@@ -59,6 +66,7 @@
         featuredWrapper.style.animationDelay = "0";
         featuredTitle.style.animationName = "fade-in";
         featuredDate.style.animationName = "fade-in";
+        featuredKlub.style.animationName = "fade-in";
 
         setInterval(featuredSwitchContent, 10000);
     

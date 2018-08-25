@@ -42,6 +42,10 @@
     background-color:#83CECA;
     padding:0 10px;
     display:none;
+    opacity:0;
+    animation-fill-mode:forwards;
+    animation-duration:1.5s;
+    animation-delay:2.25s;
 }
 .klub25[data-klub="Club25"]{
     display:inline;
