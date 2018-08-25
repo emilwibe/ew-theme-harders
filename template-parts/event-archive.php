@@ -91,7 +91,15 @@
             "eventTitle": "<?php the_title(); ?>",
             "eventTime": "<?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?>",
             "eventLink": "<?php echo get_the_permalink(); ?>",
-            "eventThumbnail": "<?php echo get_the_post_thumbnail_url('', 'full'); ?>"
+            "eventThumbnail": "<?php echo get_the_post_thumbnail_url('', 'full'); ?>",
+<?php if(get_field('event_klub_25')) : ?>
+            
+            "club25": true 
+<?php else : ?>
+
+            "club25": false
+<?php endif; ?>
+
         }
         featuredEventArray.push(eventSingle);
     <?php endwhile; ?>
