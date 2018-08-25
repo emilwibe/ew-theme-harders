@@ -9,7 +9,7 @@ const   gulp = require("gulp"),
 gulp.task("css", function(){
     return gulp.src("./src/**/*.css")
         .pipe(concatCSS("core-styles.css"))
-        //.pipe(cleanCSS())
+        .pipe(cleanCSS())
         .pipe(gulp.dest("./dist"))
 });
 

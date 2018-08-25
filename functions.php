@@ -7,7 +7,8 @@
     });
     add_action('wp_enqueue_scripts', function(){
         wp_enqueue_style('core-styles', get_template_directory_uri() . '/dist/core-styles.css', '', '');
-        wp_enqueue_script('core-scripts-footer', get_template_directory_uri() . '/dist/core-footer.js', '', '', true);
+        wp_enqueue_script('core-scripts-head', get_template_directory_uri() . '/dist/core-head-min.js', '', '', false);
+        wp_enqueue_script('core-scripts-footer', get_template_directory_uri() . '/dist/core-footer-min.js', '', '', true);
     });
 
     //CUSTOM POST TYPE
