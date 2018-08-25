@@ -81,12 +81,18 @@
                 var newEl = document.createElement("a");
                 var newHeading = document.createElement("h2");
                 var newTime = document.createElement("time");
+                var newKlub = document.createElement("span");
                 newEl.classList.add("featured", "event", "slide");
                 newEl.setAttribute("href", featuredEventArray[i]["eventLink"]);
                 newHeading.innerHTML = featuredEventArray[i]["eventTitle"];
                 newTime.innerHTML = featuredEventArray[i]["eventTime"];
                 newEl.appendChild(newHeading);
                 newEl.appendChild(newTime);
+                if(featuredEventArray[i]["klub25"]){
+                    newKlub.classList.add("k25");
+                    newKlub.innerHTML = "Klub25";
+                    newEl.appendChild(newKlub);
+                }
                 featuredSlider.appendChild(newEl);
             }
         }
