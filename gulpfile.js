@@ -13,6 +13,13 @@ gulp.task("css", function(){
         .pipe(gulp.dest("./dist"))
 });
 
+gulp.task("js-head", function(){
+    return gulp.src("./src/js/header/**/*.js")
+        .pipe(concat("core-head.js"))
+        .pipe(minify())
+        .pipe(gulp.dest("./dist"))
+});
+
 gulp.task("js-footer", function(){
     return gulp.src("./src/js/footer/**/*.js")
         .pipe(concat("core-footer.js"))
@@ -20,4 +27,4 @@ gulp.task("js-footer", function(){
         .pipe(gulp.dest("./dist"))
 });
 
-gulp.task("default", ["css", "js-footer"]);
+gulp.task("default", ["css", "js-head", "js-footer"]);
