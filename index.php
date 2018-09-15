@@ -12,6 +12,14 @@
     <?php while(have_posts()) : the_post(); ?>
 
         <h1><?php the_title(); ?></h1>
+
+        <?php
+            $eventDateTime = date_create(get_field('event_datetime'));
+            $eventDateFormat = date_format($eventDateTime, "j/n");
+        ?>
+
+        <time><?php echo $eventDateFormat; ?></time>
+
         <?php if(get_field('ticket_url')) : ?>
 
             <a href="<?php the_field('ticket_url'); ?>" class="event ticket" target="_blank">Køb Billet</a>
