@@ -11,12 +11,7 @@
     <main class="wrapper sm">
     <?php while(have_posts()) : the_post(); ?>
 
-        <div class="heading wrapper sm">
-
-            <h1><?php the_title(); ?></h1>
-
-        </div><!--/.heading.wrapper-->
-
+        <h1><?php the_title(); ?></h1>
         <?php if(get_field('ticket_url')) : ?>
 
             <a href="<?php the_field('ticket_url'); ?>" class="event ticket" target="_blank">Køb Billet</a>
