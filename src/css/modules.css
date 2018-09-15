@@ -223,3 +223,9 @@
     position: relative;
     z-index:-1;
 }
+.single-event time{
+    text-transform:uppercase;
+    font-family:'Ubuntu', sans-serif;
+    font-weight:700;
+    font-size:28px;
+}
