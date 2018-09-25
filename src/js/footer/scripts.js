@@ -54,7 +54,7 @@
                 featuredTitle.style.animationName = "fade-in";
                 featuredDate.style.animationName = "fade-in";
                 featuredKlub.style.animationName = "fade-in";
-            }, 6000);
+            }, 1000);
             
         }
         function featuredSwitchContent(){
