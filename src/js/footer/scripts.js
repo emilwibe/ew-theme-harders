@@ -32,37 +32,35 @@
             featuredKlub.style.animationName = "fade-out";
 
             setTimeout(function(){
-            featuredPlaceholderSrc = featuredPlaceholder.getAttribute("src");
+                featuredPlaceholderSrc = featuredPlaceholder.getAttribute("src");
 
-            featuredContainer.style.backgroundImage = 'url(' + featuredPlaceholderSrc + ')';
-            featuredContainer.style.animationName = "fade-in";
-            featuredWrapper.style.animationName = "fade-in";
-            featuredWrapper.style.animationDelay = "0";
-            featuredTitle.style.animationName = "fade-in";
-            featuredDate.style.animationName = "fade-in";
-            featuredKlub.style.animationName = "fade-in";
+
+                if(featuredEventArray[featuredEventCounter]["klub25"]){
+                    featuredKlub.setAttribute("data-klub", "Club25");
+                } else {
+                    featuredKlub.setAttribute("data-klub", "false");
+                }
+                featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
+                featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
+                featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
+                featuredWrapper.style.animationDelay = "0.75s";
+                featuredWrapper.style.animationDuration = "1.5s";
+
+
+                featuredContainer.style.backgroundImage = 'url(' + featuredPlaceholderSrc + ')';
+                featuredContainer.style.animationName = "fade-in";
+                featuredWrapper.style.animationName = "fade-in";
+                featuredWrapper.style.animationDelay = "0";
+                featuredTitle.style.animationName = "fade-in";
+                featuredDate.style.animationName = "fade-in";
+                featuredKlub.style.animationName = "fade-in";
             }, 1000);
             
         }
         function featuredSwitchContent(){
             if(featuredEventArray.length > 1){
-
-                
-                setTimeout(function(){
-                    if(featuredEventArray[featuredEventCounter]["klub25"]){
-                        featuredKlub.setAttribute("data-klub", "Club25");
-                    } else {
-                        featuredKlub.setAttribute("data-klub", "false");
-                    }
-                    featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
-                    featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
-                    featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
-                    featuredWrapper.style.animationDelay = "0.75s";
-                    featuredWrapper.style.animationDuration = "1.5s";
-                    featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
-                }, 2000);
-
-
+                featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
+            
                 if(featuredEventCounter == featuredEventArray.length - 1){
                     featuredEventCounter = 0;
                 } else {
