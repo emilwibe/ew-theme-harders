@@ -12,7 +12,7 @@
         featuredLink = document.getElementById("featured-link"),
         featuredKlub = document.getElementById("featured-klub"),
         featuredSlider = document.getElementById("featured-slider"),
-        featuredEventCounter = 1
+        featuredEventCounter = 0
 
     ;
     navToggle.addEventListener("click", function(e){
