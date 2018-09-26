@@ -54,18 +54,18 @@
                 featuredTitle.style.animationName = "fade-in";
                 featuredDate.style.animationName = "fade-in";
                 featuredKlub.style.animationName = "fade-in";
+
+                if(featuredEventCounter == featuredEventArray.length - 1){
+                    featuredEventCounter = 0;
+                } else {
+                    featuredEventCounter += 1;
+                }
             }, 1000);
             
         }
         function featuredSwitchContent(){
             if(featuredEventArray.length > 1){
                 featuredPlaceholder.setAttribute("src", featuredEventArray[featuredEventCounter]["eventThumbnail"]);
-            
-                if(featuredEventCounter == featuredEventArray.length - 1){
-                    featuredEventCounter = 0;
-                } else {
-                    featuredEventCounter += 1;
-                }
             }
         }
 
