@@ -13,12 +13,14 @@
 
         <h1><?php the_title(); ?></h1>
 
+        <?php if(is_single()) : ?>
         <?php
             $eventDateTime = date_create(get_field('event_datetime'));
             $eventDateFormat = date_format($eventDateTime, "j/n");
         ?>
 
         <time><?php echo $eventDateFormat; ?></time>
+        <?php endif; ?>
 
         <?php if(get_field('ticket_url')) : ?>
 
