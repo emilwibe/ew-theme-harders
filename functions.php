@@ -39,3 +39,10 @@
         'menu_position' =>  2,
         'menu_icon' =>  'dashicons-format-audio',
     ));
+
+    //ADD EVENT CUSTOM FIELDS TO REST API
+    add_action('rest_api_init', function(){
+        register_rest_field('event', 'event_date',array(
+            'get_callback' => function(){return 'super';}
+        ));
+    });
