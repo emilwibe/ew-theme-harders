@@ -52,4 +52,9 @@
                 return get_field('ticket_url');
             }
         ));
+        register_rest_field('event', 'club25', array(
+            'get_callback' => function(){
+                return get_field('event_klub_25');
+            }
+        ));
     });
