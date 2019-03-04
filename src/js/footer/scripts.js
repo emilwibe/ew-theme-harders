@@ -84,7 +84,7 @@
             }, false);
         }
     
-        if(featuredEventArray.length){
+        if(featuredEventArray.length && homePage.length){
             for(let i = 0 ; i < featuredEventArray.length ; i += 1){
                 var newEl = document.createElement("a");
                 var newHeading = document.createElement("h2");
