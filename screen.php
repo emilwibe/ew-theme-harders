@@ -31,6 +31,8 @@
     ;
         if(previous !== current){
             location.reload(true);
+        } else {
+            console.log("Nothing new to see here");
         }
     }, 5000);
 </script>
