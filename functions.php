@@ -47,4 +47,9 @@
                 return get_field('event_datetime');
             }
         ));
+        register_rest_field('event', 'ticket_url', array(
+            'get_callback' => function(){
+                return get_field('ticket_url');
+            }
+        ));
     });
