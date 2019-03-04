@@ -15,13 +15,14 @@
         featuredEventCounter = 1
 
     ;
-    navToggle.addEventListener("click", function(e){
-        e.preventDefault();
-        navPrimary.classList.toggle("is-hidden");
+    if(navToggle){
+        navToggle.addEventListener("click", function(e){
+            e.preventDefault();
+            navPrimary.classList.toggle("is-hidden");
+        }, false);
+    }
 
-    }, false);
-
-    if(homePage.length){
+    if(featuredContainer){
         function featuredImageLoad(){
             featuredWrapper.style.animationDelay = "0s";
             featuredWrapper.style.animationDuration = "0.10s";
