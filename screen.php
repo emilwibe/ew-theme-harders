@@ -19,14 +19,20 @@
         console.log(previous);
     })
     ;
-/*
     setInterval(function(){
 
+        fetch('https://harders.nu/wp-json/wp/v2/event')
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(myJson){
+            current = JSON.stringify(myJson);
+        })
+    ;
+        if(previous !== current){
+            location.reload(true);
+        }
     }, 5000);
-    /*
-    .then(function(response) {
-        location.reload(true);
-    });*/
 </script>
 
 <?php get_footer(); ?>
