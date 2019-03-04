@@ -16,7 +16,6 @@
     })
     .then(function(myJson){
         previous = JSON.stringify(myJson);
-        console.log(previous);
     })
     ;
     setInterval(function(){
