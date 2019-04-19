@@ -114,7 +114,7 @@
                 scrollNum += e.deltaX + e.deltaY;
                 featuredSlider.scrollLeft = scrollNum;
             }  
-        }, false, {passive: true, });
+        }, false, {passive: true});
         
     }
 })();
