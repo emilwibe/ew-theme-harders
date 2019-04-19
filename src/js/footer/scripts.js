@@ -61,6 +61,8 @@
                 } else {
                     featuredEventCounter += 1;
                 }
+
+                console.log("Counter: " + featuredEventCounter);
             }, 1000);
             
         }
