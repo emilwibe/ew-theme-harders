@@ -46,5 +46,7 @@
         <h1><?php the_title(); ?></h1>
         <p>date: <?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></p>
 
+        <?php wp_delete_post( get_the_ID(), false); ?>
+
     <?php endwhile; ?>
 <?php endif; ?>
