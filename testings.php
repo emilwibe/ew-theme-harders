@@ -23,7 +23,7 @@
 
   $args = array(
       'post_type' => 'event',
-      'posts_per_page' => 1,
+      'posts_per_page' => -1,
       'meta_query' => array(
           array(
             'key' => 'event_datetime',
