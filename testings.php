@@ -44,6 +44,7 @@
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 
         <h1><?php the_title(); ?></h1>
+        <p>date: <?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></p>
 
     <?php endwhile; ?>
 <?php endif; ?>
