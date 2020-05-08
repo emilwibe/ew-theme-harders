@@ -79,11 +79,14 @@
             }
         }
 
-        featuredWrapper.style.animationName = "fade-in";
-        featuredWrapper.style.animationDelay = "0";
-        featuredTitle.style.animationName = "fade-in";
-        featuredDate.style.animationName = "fade-in";
-        featuredKlub.style.animationName = "fade-in";
+        if ( featuredWrapper ) {
+            featuredWrapper.style.animationName = "fade-in";
+            featuredWrapper.style.animationDelay = "0";
+            featuredTitle.style.animationName = "fade-in";
+            featuredDate.style.animationName = "fade-in";
+            featuredKlub.style.animationName = "fade-in";
+        }
+        
 
         setInterval(featuredSwitchContent, 10000);
     
