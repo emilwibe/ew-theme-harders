@@ -44,6 +44,7 @@
         <img src="" alt="" class="featured placeholder" id="featured-placeholder">
         <div class="featured image container" id="featured-container" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, 'full'); ?>'); ?>"></div><!--/.featured.image-->
 
+        <!--
         <div class="featured wrapper sm2" id="featured-wrapper">
         <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">
             <h2 class="featured event title" id="featured-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
