@@ -85,7 +85,9 @@
                 featuredImageLoad();
             }, false);
         }
-    
+    }
+
+    if ( featuredSlider ) {
         if(featuredEventArray.length && homePage.length){
             for(let i = 0 ; i < featuredEventArray.length ; i += 1){
                 var newEl = document.createElement("a");
@@ -106,7 +108,6 @@
                 featuredSlider.appendChild(newEl);
             }
         }
-
         var scrollMax,
             scrollNum = 0
         ;
@@ -117,6 +118,5 @@
                 featuredSlider.scrollLeft = scrollNum;
             }  
         }, false, {passive: true});
-        
     }
 })();
