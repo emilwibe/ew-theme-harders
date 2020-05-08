@@ -24,37 +24,44 @@
 
     if(featuredContainer){
         function featuredImageLoad(){
-            featuredWrapper.style.animationDelay = "0s";
-            featuredWrapper.style.animationDuration = "0.10s";
-            featuredWrapper.style.animationName = "fade-out";
-            featuredContainer.style.animationName = "fade-out";
-            featuredTitle.style.animationName = "fade-out";
-            featuredDate.style.animationName = "fade-out";
-            featuredKlub.style.animationName = "fade-out";
+            if ( featuredWrapper ) {
+                featuredWrapper.style.animationDelay = "0s";
+                featuredWrapper.style.animationDuration = "0.10s";
+                featuredWrapper.style.animationName = "fade-out";
+                featuredContainer.style.animationName = "fade-out";
+                featuredTitle.style.animationName = "fade-out";
+                featuredDate.style.animationName = "fade-out";
+                featuredKlub.style.animationName = "fade-out";
+            }
+            
 
             setTimeout(function(){
                 featuredPlaceholderSrc = featuredPlaceholder.getAttribute("src");
 
+                if ( featuredWrapper ) {
+                    if(featuredEventArray[featuredEventCounter]["klub25"]){
+                        featuredKlub.setAttribute("data-klub", "Club25");
+                    } else {
+                        featuredKlub.setAttribute("data-klub", "false");
+                    }
+                    featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
+                    featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
+                    featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
+                    featuredWrapper.style.animationDelay = "0.75s";
+                    featuredWrapper.style.animationDuration = "1.5s";
 
-                if(featuredEventArray[featuredEventCounter]["klub25"]){
-                    featuredKlub.setAttribute("data-klub", "Club25");
-                } else {
-                    featuredKlub.setAttribute("data-klub", "false");
+                    featuredWrapper.style.animationName = "fade-in";
+                    featuredWrapper.style.animationDelay = "0";
+                    featuredTitle.style.animationName = "fade-in";
+                    featuredDate.style.animationName = "fade-in";
+                    featuredKlub.style.animationName = "fade-in";
                 }
-                featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
-                featuredDate.innerHTML = featuredEventArray[featuredEventCounter]["eventTime"];
-                featuredLink.setAttribute("href", featuredEventArray[featuredEventCounter]["eventLink"]);
-                featuredWrapper.style.animationDelay = "0.75s";
-                featuredWrapper.style.animationDuration = "1.5s";
+                
 
 
                 featuredContainer.style.backgroundImage = 'url(' + featuredPlaceholderSrc + ')';
                 featuredContainer.style.animationName = "fade-in";
-                featuredWrapper.style.animationName = "fade-in";
-                featuredWrapper.style.animationDelay = "0";
-                featuredTitle.style.animationName = "fade-in";
-                featuredDate.style.animationName = "fade-in";
-                featuredKlub.style.animationName = "fade-in";
+                
 
                 if(featuredEventCounter == featuredEventArray.length - 1){
                     featuredEventCounter = 0;
@@ -86,7 +93,7 @@
             }, false);
         }
     }
-
+    // events i bunden af forsiden
     if ( featuredSlider ) {
         if(featuredEventArray.length && homePage.length){
             for(let i = 0 ; i < featuredEventArray.length ; i += 1){
