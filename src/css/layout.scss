@@ -2,9 +2,12 @@
     margin:0 auto;
     width:96%;
 }
-.wrapper.sm{
-    max-width:768px;
+.wrapper.xl {
+    max-width: 1200px;
 }
-.wrapper.sm2{
-    max-width:720px;
+.wrapper.sm {
+    max-width: 768px;
+}
+.wrapper.sm2 {
+    max-width: 720px;
 }
