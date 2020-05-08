@@ -3,7 +3,7 @@
 <h1>Harders Live</h1>
 
 <div class="embed-feed">
-  <?php the_field( 'live-feed_embed-code' ); ?>
+  <?php the_field( 'live-feed_embed-code', 'option' ); ?>
 </div><!--/.embed-feed-->
 
 
