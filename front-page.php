@@ -9,5 +9,5 @@
   }
   
 ?>
-<!-- hello there <?php echo get_field( 'live-feed_embed-code', 'option' ); ?> -->
+<!-- hello there <?php echo get_field( 'live-feed_embed', 'option' ); ?> -->
 <?php get_footer(); ?>
