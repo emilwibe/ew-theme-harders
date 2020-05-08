@@ -46,6 +46,9 @@
     font-family: 'Ubuntu', sans-serif;
     text-transform:uppercase;
 }
+.fb-live {
+    margin-top: 100px;
+}
 .featured.placeholder{
     display:none;
 }
@@ -203,7 +206,7 @@
 .wysiwyg > *:first-child{
     margin-top:0;
 }
-.wp-block-embed.is-type-video{
+.wp-block-embed.is-type-video, .embed-feed{
     height:0;
     width:100%;
     margin-left:0;
@@ -212,7 +215,7 @@
     overflow:hidden;
     position:relative;
 }
-.wp-block-embed.is-type-video > *{
+.wp-block-embed.is-type-video > *, .embed-feed > *{
     width:100%;
     height:100%;
     position:absolute;
