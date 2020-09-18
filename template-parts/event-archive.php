@@ -93,7 +93,12 @@
             "eventTime": "<?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?>",
             "eventLink": "<?php echo get_the_permalink(); ?>",
             "eventThumbnail": "<?php echo get_the_post_thumbnail_url('', 'full'); ?>",
-<?php if(get_field('event_klub_25')) : ?>
+
+<?php
+  $eventPreferences = get_field( 'event_klub_25' );
+?>
+
+<?php if( $eventPreferences[0] ) : ?>
             
             "klub25": true 
 <?php else : ?>
