@@ -52,6 +52,13 @@
 .klub25[data-klub="Club25"]{
     display:inline;
 }
+.klub[data-klub="fynlive"]{
+    display: inline;
+}
+.klub25.fynlive {
+    background-color: #BA2026;
+    color: #fff;
+}
 .featured.event.slide .k25{
     color:#333;
     background-color:#83CECA;
