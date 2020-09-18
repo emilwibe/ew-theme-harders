@@ -54,7 +54,7 @@ $the_query = new WP_Query($args);
 				<time class="featured event date" id="featured-date"><?php $date = date_create(get_field('event_datetime'));
 																		echo date_format($date, "d/m"); ?></time>
 				<div class="klub25" id="featured-klub" data-klub="<?php the_field('event_klub_25'); ?>">Klub25</div>
-				<div class="klub25 fynlive" id="featured-klub" data-klub="fynlive">FynLive</div>
+				<div class="klub25 fynlive" id="featured-fynslive" data-klub="">FynLive</div>
 			</a>
 		</div>
 		<!--/.wrapper.sm-->
