@@ -48,9 +48,9 @@
                     }
 
                     if(featuredEventArray[featuredEventCounter]["fynlive"]){
-                        featuredKlub.setAttribute("data-klub", "fynlive");
+                        featuredFynsLive.setAttribute("data-klub", "fynlive");
                     } else {
-                        featuredKlub.setAttribute("data-klub", "false");
+                        featuredFynsLive.setAttribute("data-klub", "false");
                     }
 
                     featuredTitle.innerHTML = featuredEventArray[featuredEventCounter]["eventTitle"];
