@@ -40,7 +40,10 @@
   ?>
   <?php if($the_query->have_posts()) : ?>
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
-    
+    <?php
+      $eventPreferences = get_field( 'event_klub_25' );
+    ?>
+
         <img src="" alt="" class="featured placeholder" id="featured-placeholder">
         <div class="featured image container" id="featured-container" style="background-image:url('<?php echo get_the_post_thumbnail_url(null, 'full'); ?>'); ?>"></div><!--/.featured.image-->
 
@@ -48,9 +51,14 @@
         <a class="featured event link" id="featured-link" href="<?php echo get_the_permalink(); ?>">
             <h2 class="featured event title" id="featured-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
             <time class="featured event date" id="featured-date"><?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></time>
+
+        <?php if( $eventPreferences[0] ) : ?>
+
             <div class="klub25" id="featured-klub" data-klub="<?php the_field('event_klub_25'); ?>">Klub25</div>
+        <?php endif; ?>
+        
         </a>
-        </div><!--/.wrapper.sm-->
+      </div><!--/.wrapper.sm-->
 
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
