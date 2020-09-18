@@ -115,6 +115,7 @@
                 var newHeading = document.createElement("h2");
                 var newTime = document.createElement("time");
                 var newKlub = document.createElement("span");
+                var newFL = document.createElement("span");
                 newEl.classList.add("featured", "event", "slide");
                 newEl.setAttribute("href", featuredEventArray[i]["eventLink"]);
                 newHeading.innerHTML = featuredEventArray[i]["eventTitle"];
@@ -125,6 +126,11 @@
                     newKlub.classList.add("k25");
                     newKlub.innerHTML = "Klub25";
                     newEl.appendChild(newKlub);
+                }
+                if( featuredEventArray[i]["fynlive"] ){
+                    newFL.classList.add("FL");
+                    newFL.innerHTML = "FynLIVE";
+                    newEl.appendChild("newFL");
                 }
                 featuredSlider.appendChild(newEl);
             }
