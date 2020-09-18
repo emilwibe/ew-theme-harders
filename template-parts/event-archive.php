@@ -42,8 +42,6 @@
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
     <?php
       $eventPreferences = get_field( 'event_klub_25' );
-
-      var_dump($eventPreferences);
     ?>
 
         <img src="" alt="" class="featured placeholder" id="featured-placeholder">
@@ -54,7 +52,7 @@
             <h2 class="featured event title" id="featured-title" style="color:<?php the_field('event_text_color'); ?>"><?php the_title(); ?></h2>
             <time class="featured event date" id="featured-date"><?php $date = date_create(get_field('event_datetime')); echo date_format($date, "d/m"); ?></time>
 
-        <?php if( $eventPreferences[0] ) : ?>
+        <?php if( $eventPreferences[0] === 'club25' ) : ?>
 
             <div class="klub25" id="featured-klub" data-klub="<?php the_field('event_klub_25'); ?>">Klub25</div>
         <?php endif; ?>
@@ -108,7 +106,7 @@
   $eventPreferences = get_field( 'event_klub_25' );
 ?>
 
-<?php if( $eventPreferences[0] ) : ?>
+<?php if( $eventPreferences[0] === 'club25' ) : ?>
             
             "klub25": true 
 <?php else : ?>
