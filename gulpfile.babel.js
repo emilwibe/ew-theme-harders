@@ -17,7 +17,8 @@ const paths = {
     "./src/css/base.scss",
     "./src/css/layout.scss",
     "./src/css/state.scss",
-    "./src/css/modules.scss"
+    "./src/css/modules.scss",
+    "./src/css/theme.scss"
   ],
   jsFooter: [
     "./src/js/footer/scripts.js"
