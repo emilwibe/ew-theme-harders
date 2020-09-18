@@ -42,6 +42,8 @@
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
     <?php
       $eventPreferences = get_field( 'event_klub_25' );
+
+      var_dump($eventPreferences);
     ?>
 
         <img src="" alt="" class="featured placeholder" id="featured-placeholder">
